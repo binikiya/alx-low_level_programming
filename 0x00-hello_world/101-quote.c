@@ -14,13 +14,12 @@ int j;
 char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
   for(j = 0; arr[j] != '\0';j++)
-    putIt(arr[j]);
-  putIt('\n');
-  
+   _putchar(arr[j]);
+  _putchar('\n');
   
 return (1);
 }
 
-int putIt(char c){
+int _putchar(char c){
   return (write(1, &c, a));
 }
