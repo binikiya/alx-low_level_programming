@@ -10,16 +10,6 @@
 
 int main(void)
 {
-int j;
-char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-  for(j = 0; arr[j] != '\0';j++)
-   _putchar(arr[j]);
-  _putchar('\n');
-  
-return (1);
-}
-
-int _putchar(char c){
-  return (write(1, &c, a));
+  write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 1); 
+  return (1);
 }
