@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+/**
+ *main - prints all combination of digits followed by space and comma
+ *
+ *Return: always return 0
+ */
+
+int main(void)
+{
+  
