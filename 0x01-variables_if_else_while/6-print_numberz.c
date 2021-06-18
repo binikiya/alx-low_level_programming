@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- *main - prints 10 base numbers without using char variable and printf and puts function
+ *main - prints 10 base numbers without using char variables
  *
  *Return: always prints 0
  */
