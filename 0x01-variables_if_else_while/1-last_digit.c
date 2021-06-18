@@ -3,7 +3,7 @@
 #include<time.h>
 
 /**
- *main - prints last digit of randomly generated number and shows that then number is either greater or less or equal to 5
+ *main - prints last digit of randomly generated number
  *
  *Return: Always Return 0
  */
