@@ -8,11 +8,10 @@
 
 int main(void)
 {
-int n = 0;
-while (n <= 9)
+int n;
+for (n = 0; n <= 9; n++)
 {
 putchar((n % 10) + '0');
-n++;
 if (n == 9)
 continue;
 putchar(',');
