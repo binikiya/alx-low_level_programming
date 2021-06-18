@@ -8,12 +8,12 @@
 
 int main(void)
 {
-int n;
+int n = 0;
 while(n <= 9){
-  putchar((n%10) + '0');
-  n++;
+putchar((n%10) + '0');
+n++;
 }
-putchar("\n");
+putchar('\n');
 
 return (0);
 }
