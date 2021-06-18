@@ -3,13 +3,13 @@
 /**
  *main - prints alphabeic characters starting from a to z
  *
- *Returm: Always returns 0.
+ *Return: Always returns 0.
  */
 
 int main(void)
 {
-char ch ;
-for(ch = 'a';ch <= 'z';ch++)
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
 putchar('\n');
 
