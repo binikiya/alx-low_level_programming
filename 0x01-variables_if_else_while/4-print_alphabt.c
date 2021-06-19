@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- *main - prints english lowercase letters except a and q and followed by new line that is all
+ *main - prints english lowercase letters except a and q
  *
  *Return: Always returns 0
  */
