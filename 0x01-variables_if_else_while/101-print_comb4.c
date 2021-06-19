@@ -20,9 +20,9 @@ putchar((d1 % 10) + '0');
 putchar((d2 % 10) + '0');
 putchar((d3 % 10) + '0');
 
-if (d1 == 7 && d2 == 8 && d3 ==9)
+if (d1 == 7 && d2 == 8 && d3 == 9)
 continue;
- 
+
 putchar(',');
 putchar(' ');
 
