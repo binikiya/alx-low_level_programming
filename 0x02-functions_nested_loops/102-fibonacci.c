@@ -16,7 +16,7 @@ while (count < 50)
 {
 sum = fb1 + fb2;
 fb1 = fb2;
-printf("%d", sum);
+printf("%lu", sum);
 fb2 = sum;
 if (count == 49)
 printf("/n");
