@@ -11,12 +11,15 @@ int n1, n2, mult;
 
 for (n1 = 0; n1 <= 9; n1++)
 {
-for (n2 = 0; n2 <= 9; n2++)
+_putchar('0');
+for (n2 = 1; n2 <= 9; n2++)
 {
-mult = n1 * n2;
-_putchar(mult + '0');
 _putchar(',');
 _putchar(' ');
+mult = n1 * n2;
+if (mult <= 9)
+_putchar(' ');
+_putchar(mult + '0');
 }
 _putchar('\n');
 }
