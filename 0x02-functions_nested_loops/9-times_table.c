@@ -19,7 +19,9 @@ _putchar(' ');
 mult = n1 * n2;
 if (mult <= 9)
 _putchar(' ');
-_putchar(mult + '0');
+else
+_putchar((mult / 10) + '0');
+_putchar((mult % 10) '0');
 }
 _putchar('\n');
 }
