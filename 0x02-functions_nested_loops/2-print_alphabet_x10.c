@@ -4,7 +4,7 @@
 /**
  *main - prints lowercase english letters 10 times
  *
- *Return - always return 0
+ *Return: returns void
  */
 
 void print_alphabet_x10(void)
@@ -20,5 +20,4 @@ _putchar(ch);
 _putchar('\n');
 }
 
-return (0);
 }

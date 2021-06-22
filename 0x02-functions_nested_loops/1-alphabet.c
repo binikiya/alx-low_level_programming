@@ -4,7 +4,7 @@
 /**
  *main - prints english lowercase alphabets
  *
- *Return: always return 0
+ *Return: returns void
  */
 
 void print_alphabet(void)
@@ -14,5 +14,4 @@ for (ch = 'a'; ch <= 'z'; ch++)
 _putchar(ch);
 _putchar('\n');
 
-return 0;
 }
