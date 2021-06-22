@@ -1,8 +1,10 @@
 #include<stdio.h>
-#include<holberton.h>
+#include "holberton.h"
 
 /**
  *print_to_98 - prints the numbers up to 98
+ *
+ *@n: the num to be displayed
  */
 
 void print_to_98(int n)

@@ -4,6 +4,9 @@
 /**
  *add - return the addition of two numbers
  *
+ *@a: the first number to be added
+ *@b: the second number to be addes
+ *
  *Return: returns the sum of two num
  */
 

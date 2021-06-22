@@ -4,6 +4,8 @@
 /**
  *_abs - print the absolute value of integers
  *
+ *@n: the number to be checked
+ *
  *Return: absolute values of integers
  */
 
