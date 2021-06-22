@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- *main - prints english lowercase alphabets
+ *print_alphabet - prints english lowercase alphabets
  *
  *Return: returns void
  */
