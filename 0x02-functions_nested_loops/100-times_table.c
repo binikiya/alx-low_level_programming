@@ -9,31 +9,31 @@
 
 void print_times_table(int n)
 {
-int n1, n2, mult;
+  int num, mult, prod;
 if (n >= 0 && n <= 15)
 {
-for (n1 = 0; n1 <= n; n1++)
+for (num = 0; num <= n; num++)
 {
 _putchar('0');
-for (n2 = 1; n2 <= n; n2++)
+for (mult = 1; mult <= n; mult++)
 {
 _putchar(',');
 _putchar(' ');
-mult = n1 * n2;
-if (mult <= 99)
+prod = num * mult;
+if (prod <= 99)
 _putchar(' ');
-if (mult <= 9)
+if (prod <= 9)
 _putchar(' ');
-if (mult >= 100)
+if (prod >= 100)
 {
-_putchar((mult / 100) + '0');
-_putchar(((mult / 10) % 10) + '0');
+_putchar((prod / 100) + '0');
+ _putchar(((prod / 10)) % 10 + '0');
 }
-else if (mult <= 99 && mult >= 10)
+else if (prod <= 99 && prod >= 10)
 {
-putchar((mult / 10) + '0');
+putchar((prod / 10) + '0');
 }
-_putchar((mult % 10) + '0');
+_putchar((prod % 10) + '0');
 }
 _putchar('\n');
 }

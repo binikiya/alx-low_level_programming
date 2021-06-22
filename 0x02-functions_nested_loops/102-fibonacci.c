@@ -19,7 +19,7 @@ fb1 = fb2;
 printf("%lu", sum);
 fb2 = sum;
 if (count == 49)
-printf("/n");
+printf("\n");
 else
 printf(", ");
 count++;
