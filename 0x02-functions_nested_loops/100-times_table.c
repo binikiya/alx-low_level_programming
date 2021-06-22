@@ -35,7 +35,7 @@ putchar((mult / 10) + '0');
 }
 _putchar((mult % 10) + '0');
 }
-_putchat('\n');
+_putchar('\n');
 }
 }
 }

@@ -24,7 +24,7 @@ sum += tot;
 fb1 = fb2;
 fb2 = tot;
 }
-printf("%d\n",  sum);
+printf("%.0f\n",  sum);
 
 return (0);
 }
