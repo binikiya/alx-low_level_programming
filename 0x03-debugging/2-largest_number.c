@@ -3,9 +3,9 @@
 
 /**
  *largest_number - print the largest of three number
- *@a: 1st num
- *@b: 2nd num
- *@c: 3rd num
+ *@a: first integer
+ *@b: second integer
+ *@c: third integer
  *Return: largest number
  */
 
@@ -19,5 +19,5 @@ largest = b;
 else
 largest = c;
 
-return (0);
+return (largest);
 }
