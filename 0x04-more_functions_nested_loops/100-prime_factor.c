@@ -7,7 +7,7 @@
 
 int main(void)
 {
-unsigned long p, i, n;
+long int p, i, n;
 n = 612852475143;
 int isP;
 for (i = 2; i <= n; i++)
