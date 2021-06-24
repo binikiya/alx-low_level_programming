@@ -7,22 +7,23 @@
 
 int main(void)
 {
-long int p, i, n;
-n = 612852475143;
-int isP;
-for (i = 2; i <= n; i++)
+long p, div;
+p = 612852475143;
+
+while (div < (p / 2))
 {
-isP = 1;
-for (p = 2; p < i; p++)
+if ((p % 2) == 0)
 {
-if (i % p == 0)
+p /= 2;
+continue;
+}
+for (div = 3; div < (p / 2); div += 2)
 {
-isP = 0;
-break;
+if (p % div == 0)
+p /= div;
 }
 }
-if (isP == 1 && (n % i == 0))
-n /= i;
-}
-printf("\n");
+printf("%ld\n", p);
+
+return (0);
 }
