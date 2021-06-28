@@ -46,5 +46,3 @@ return ((e) * -1);
 else
 return (e);
 }
- 
-      

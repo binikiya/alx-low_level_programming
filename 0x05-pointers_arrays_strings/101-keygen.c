@@ -12,7 +12,7 @@ int main(void)
 {
 int counter, checksum, a;
 
-strand(time(NULL));
+srand(time(NULL));
 checksum = 2772;
 counter = 0;
 
