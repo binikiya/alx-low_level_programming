@@ -6,7 +6,7 @@
  * @str: a pointers to be printed
  */
 
-vied puts_half(char *str)
+void puts_half(char *str)
 {
 int i;
 int j;
