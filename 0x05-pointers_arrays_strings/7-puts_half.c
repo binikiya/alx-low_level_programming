@@ -26,4 +26,5 @@ while (j < i - 1)
 _putchar(str[j]);
 j++;
 }
+_putchar('\n');
 }
