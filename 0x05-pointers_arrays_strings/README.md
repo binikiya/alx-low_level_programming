@@ -1,0 +1,1 @@
+This directory has poiters, arrays and strings
