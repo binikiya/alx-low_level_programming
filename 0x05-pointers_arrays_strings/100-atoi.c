@@ -42,7 +42,7 @@ break;
 j++;
 }
 if (ngt % 2 != 0)
-return ((e) * -1);
+return ((e) *-1);
 else
 return (e);
 }
