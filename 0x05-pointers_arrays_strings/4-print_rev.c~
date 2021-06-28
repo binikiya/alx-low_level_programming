@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+/**
+ * print_rev - prints reverse of a string
+ * @s: a string to be reversed
+ */
+
+void print_rev(char *s)
+{
+  
