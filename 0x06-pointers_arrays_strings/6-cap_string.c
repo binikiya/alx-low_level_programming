@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "holberton.h"
 
 /**
  * *cap_string - capitalizes all words of a string
@@ -8,19 +8,27 @@
 
 char *cap_string(char *s)
 {
-int i;
+int i, j;
 i = 0;
+j = 0;
+char sep[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 while (s[i] != '\0')
 {
-if (s[i] == ' ' || s[i] == ';' || s[i] == '\n' || s[i] == '\t'
-|| s[i] == ',' || s[i] == '.' || s[i] == '!' || s[i] == '?'
-|| s[i] == '"' || s[i] == '(' || s[i] == ')'
-|| s[i] == '{' || s[i] == '}')
-if (i + 1 >= 'a' && i + 1 <= 'z')
+while (sep[j] != '\0')
+{
+if (s[i] == sep[j])
+{
+if (s[i + 1] >= 97 && s[i + 1] <= 122)
 s[i + 1] = s[i + 1] - 32;
+}
+else if (i == 0)
+{
+if (s[i] >= 97 && s[i] <= 122)
+s[i] = s[i] - 32;
+}
 j++;
 }
-if (s[0] >= 'a' && s[0] <= 'z')
-s[0] = s[0] - 32;
+i++;
+}
 return (s);
 }

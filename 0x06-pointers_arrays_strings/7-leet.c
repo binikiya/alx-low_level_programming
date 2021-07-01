@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "holberton.h"
 
 /**
  * *leet - encodes a string to 1337
@@ -19,6 +19,7 @@ while (src[j] != '\0')
 if (s[i] == src[j])
 {
 s[i] = encode[j];
+break;
 }
 j++;
 }
