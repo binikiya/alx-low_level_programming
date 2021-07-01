@@ -14,7 +14,7 @@ int i = 0;
 int j = 0;
 while (s[i] != '\0')
 {
-while (src[j] != '\0')
+while (j < 10)
 {
 if (s[i] == src[j])
 {
