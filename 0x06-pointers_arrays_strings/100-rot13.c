@@ -8,22 +8,20 @@
 
 char *rot13(char *s)
 {
-char src[] ="aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-char enc[] ="nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
-int i = 0;
-int j = 0;
-while (s[i} != '\0')
-{
-while (src[j] != '\0')
-{
-if (s[i] == src[j])
-{
-s[i] = enc[j];
-break;
-}
-j++;
-}
-i++;
-}
+char abc[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+char rot[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+int i;
+int j;
+ for (i = 0; s[i} != '\0'; i++)
+   {
+     for (j = 0; j < 52; j++)
+       {
+	 if (s[i] == abc[j])
+	   {
+	     s[i] = rot[j];
+	     break;
+	   }
+       }
+   }
 return (s);
 }
