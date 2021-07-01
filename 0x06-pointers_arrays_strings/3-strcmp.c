@@ -19,6 +19,7 @@ if (s1[i] != s2[i])
 ret = s1[i] - s2[i];
 break;
 }
+i++;
 }
 return (ret);
 }
