@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * *infinite_add - adds two numbers
@@ -13,15 +13,11 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
   int longn1, longn2, big, op, add;
   for (longn1 = 0; n1[longn1] != '\0'; longn1++)
-    {
-      for (longn2 = 0; n2[longn2] != '\0'; longn2++)
-	{
-	  if (longn1 >= longn2)
-	    big = longn1;
-	  else
-	    big = longn2;
-	}
-    }
+    for (longn2 = 0; n2[longn2] != '\0'; longn2++)
+      if (longn1 >= longn2)
+	big = longn1;
+      else
+	big = longn2;
   if (size_r <= (big + 1))
     return (0);
   while (big > 0)
