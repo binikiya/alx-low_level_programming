@@ -11,11 +11,9 @@ char *_strpbrk(char *s, char *accept)
 {
 unsigned int i, j;
 char *add = NULL;
-i = 0;
-j = 0;
-while (accept[i] != '\0')
+for (i = 0; accept[i] != '\0'; i++)
 {
-while (s[j] != '\0)
+for (j = 0; s[j] != '\0; j++)
 {
 if (s[j] == accept[i])
 {
@@ -24,9 +22,7 @@ add = &(s[j]);
 if (&(s[j]) < add)
 add = &(s[j]);
 }
-j++;
 }
-i++;
 }
 return (add);
 }

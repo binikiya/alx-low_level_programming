@@ -13,7 +13,8 @@ char *pn, *ph;
 ph = needle;
 for (; *haystack != 0; haystack++)
 {
-for (pn = needle, ph = haystack; *pn == *ph && *ph; *pn++, ph++)
+for (pn = needle, ph = haystack; *pn == *ph && *pn; *pn++, ph++)
+;
 if (*pn == '\0')
 return (haystack);
 }

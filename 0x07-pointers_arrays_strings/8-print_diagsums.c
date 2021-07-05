@@ -14,9 +14,9 @@ sum2 = 0;
 for (i = 0; i < size * size;)
 {
 sum += a[i];
-i += (size + 1);
+i = i + size + 1;
 }
-for (i = size - 1; i < (size * size) - 1)
+for (i = size - 1; i < (size * size) - 1;)
 {
 sum2 += a[i];
 i += (size - 1);
