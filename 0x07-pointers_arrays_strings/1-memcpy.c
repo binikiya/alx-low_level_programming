@@ -5,7 +5,8 @@
  * *_memcpy - copies memory area
  * @dest: destination memory area
  * @src: source memory area
- * @n: dest
+ * @n: n bytes we wante to change
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
