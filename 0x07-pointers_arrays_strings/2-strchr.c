@@ -10,12 +10,19 @@
 
 char *_strchar(char *s, char c)
 {
-  unsigned int i;
-  for (; ; i++)
+  int a, b;
+  a = 0;
+  while (s[a])
     {
-      if (s[i] == c)
-	  return (&(s[i]));
-      if (!s[i])
-	return NULL;
+      a++;
     }
+  for (b = 0; b <= a; b++)
+    {
+      if (c == s[b])
+	{
+	  s += b;
+	  return (s);
+	}
+    }
+  return ('\0');
 }
