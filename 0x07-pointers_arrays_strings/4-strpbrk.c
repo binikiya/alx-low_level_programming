@@ -13,7 +13,7 @@ unsigned int i, j;
 char *add = NULL;
 for (i = 0; accept[i] != '\0'; i++)
 {
-for (j = 0; s[j] != '\0; j++)
+for (j = 0; s[j] != '\0'; j++)
 {
 if (s[j] == accept[i])
 {

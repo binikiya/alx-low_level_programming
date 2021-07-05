@@ -8,14 +8,15 @@
  * Return: s
  */
 
-char *_strchar(char *s, char *c)
+char *_strchar(char *s, char c)
 {
 unsigned int i;
-for (; ; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == c)
-return (&(s[i]));
-if (!s[i])
-return NULL;
+return (s + i);
+if (s[i + 1] == c)
+return (s + i + 1);
 }
+return NULL;
 }
