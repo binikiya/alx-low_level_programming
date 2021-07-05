@@ -10,14 +10,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-char *pn, *ph;
-ph = needle;
-for (; *haystack != 0; haystack++)
-{
-for (pn = needle, ph = haystack; *pn == *ph && *pn; *pn++, ph++)
-;
-if (*pn == '\0')
-return (haystack);
-}
-return (NULL);
+  int a, b;
+  a = 0;
+  b = 0;
+  while (haystack[a])
+    {
+      while (needle[b])
+	{
+	  if (haystack[a + b] != needle[b])
+	    {
+	      break;
+	    }
+	  b++;
+	}
+      if (needle[b] == '\0')
+	{
+	  return (haystack + a);
+	}
+      a++;
+    }
+  return ('\0');
 }
