@@ -7,9 +7,10 @@
  * Return: length
  */
 
-int strlen_rec(char *s) {
+int strlen_rec(char *s)
+{
 int i = 1;
-if (*s != '\0')
+if (*s == '\0')
 return (0);
 return (i + strlen_rec(s + 1));
 }
