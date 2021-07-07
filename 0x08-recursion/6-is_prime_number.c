@@ -3,18 +3,21 @@
 
 /**
  * is_prime_number - prints 1 if an integer is prime
+ * compare - comares
  * @n: the num to be tested
+ * @x: the num to be tested
+ * @y: the num that devides
  * Return: either 1 or 0
  */
 
-int compare(int x, int y)
+int compare(int n, int y)
 {
 int c = 0;
-if (y <= x)
+if (y <= n)
 {
-if (x % y == 0)
+if (n % y == 0)
 c++;
-return (c + compare(x, y + 1));
+return (c + compare(n, y + 1));
 }
 return (c);
 }
