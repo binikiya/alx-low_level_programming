@@ -20,6 +20,7 @@ return (compare(n, y + 1));
 /**
  * _sqrt_recursion - prints squareroot of a number
  * @n: num
+ * Return: the square root
  */
 
 int _sqrt_recursion(int n)
