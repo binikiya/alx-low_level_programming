@@ -39,8 +39,8 @@ return (palindrome(s + 1, l - 2));
 
 int is_palindrome(char *s)
 {
-unsigned int len = strlen_rec(s) -1;
-if (*s != '\0')
+unsigned int len = strlen_rec(s) - 1;
+if (*s == '\0')
 return (1);
-return palindrome(s, len);
+return (palindrome(s, len));
 }
