@@ -2,11 +2,9 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - prints the natural square root of a number
  * compare - compares the number
- * @x: the number to be checked
- * @y: the number that squared
- * @n: the number to be squared
+ * @y: couter to compare num
+ * @n: original num
  * Return: the square root of number
  */
 
@@ -18,6 +16,11 @@ else if (y * y > n)
 return (-1);
 return (compare(n, y + 1));
 }
+
+/**
+ * _sqrt_recursion - prints squareroot of a number
+ * @n: num
+ */
 
 int _sqrt_recursion(int n)
 {

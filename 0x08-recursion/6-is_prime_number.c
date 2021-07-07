@@ -2,12 +2,10 @@
 #include "holberton.h"
 
 /**
- * is_prime_number - prints 1 if an integer is prime
- * compare - comares
- * @n: the num to be tested
- * @x: the num to be tested
- * @y: the num that devides
- * Return: either 1 or 0
+ * compare - compares
+ * @n: original num
+ * @y: counter to compare
+ * Return: count
  */
 
 int compare(int n, int y)
@@ -21,6 +19,12 @@ return (c + compare(n, y + 1));
 }
 return (c);
 }
+
+/**
+ * is_prime_number - checks either an integer is prime or not
+ * @n: the num
+ * Return: 1 or 0
+ */
 
 int is_prime_number(int n)
 {
