@@ -15,11 +15,11 @@ if (argc == 3)
 {
 res = atoi(argv[1]) * atoi(argv[2]);
 printf("%s\n", res);
-return (0);
 }
 else
 {
 printf("Error\n");
 return (1);
 }
+return (0);
 }

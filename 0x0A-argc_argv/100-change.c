@@ -18,7 +18,7 @@ if (argc == 2)
 {
 for (i = 0; i < 5; i++)
 {
-if (atoi(argv[1]) >= coins[j])
+if (atoi(argv[1]) >= coins[i])
 {
 money = atoi(argv[1]) / coins[i];
 count = atoi(argv[1]) % coins[i];
