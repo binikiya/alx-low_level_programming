@@ -24,7 +24,7 @@ while (s1[n1] != '\0')
 n1++;
 while (s2[n2] != '\0')
 n2++;
-new  = malloc(sizeof(char) * (n1 + n2 + 1));
+new  = (char *)malloc(sizeof(char) * (n1 + n2 + 1));
 if (new == NULL)
 return (NULL);
 i = 0;
