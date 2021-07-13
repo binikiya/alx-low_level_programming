@@ -33,7 +33,7 @@ return (ar);
 }
 for (j = 0; j < width; j++)
 {
-a[i][j] = 0;
+ar[i][j] = 0;
 }
 }
 return (ar);
