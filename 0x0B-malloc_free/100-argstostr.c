@@ -20,7 +20,7 @@ for (c = 0; c < ac; c++)
 for (j = 0; av[c][j] != '\0'; j++)
 k++;
 }
-new = malloc(char *)(sizeof(char) * (k + ac + 1));
+new = (char *)malloc(sizeof(char) * (k + ac + 1));
 if (new == NULL)
 {
 return (NULL);
