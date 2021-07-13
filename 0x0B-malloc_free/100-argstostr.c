@@ -25,29 +25,29 @@ return (i);
 char *argstostr(int ac, char **av)
 {
 char *new;
-int i, j, c, k;
+int var, j, c, k;
 if (ac == 0 || av == NULL)
 return (NULL);
-for (i = 0; i < ac; i++)
+for (c = 0; c < ac; c++)
 {
-c += _strlen(av[i]);
+var += _strlen(av[c]);
 }
-new = malloc(sizeof(char) * (c + ac + 1));
+new = malloc(sizeof(char) * (var + ac + 1));
 if (new == NULL)
 {
 free(new);
 return (NULL);
 }
-c = 0;
+var = 0;
 for (j = 0; j < ac; j++)
 {
 for (k = 0; av[j][k] != '\0'; k++)
 {
-new[c] = av[j][k];
-c++;
+new[var] = av[j][k];
+var++;
 }
-new[c] = '\n';
-c++;
+new[var] = '\n';
+var++;
 }
 return (new);
 }
