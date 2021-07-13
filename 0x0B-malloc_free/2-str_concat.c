@@ -35,7 +35,7 @@ i++;
 }
 while (s2[count] != '\0')
 {
-new[i] = s1[count];
+new[i] = s2[count];
 count++;
 }
 return (new);

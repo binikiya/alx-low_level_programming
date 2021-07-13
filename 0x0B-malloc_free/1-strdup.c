@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - prints a pointer to a new string which is duplicates of the string str.
+ * *_strdup - prints a pointer to a new string
  * @str: string
  * Return: pointer to duplicate string or null
  */
 char *_strdup(char *str)
 {
-char *ar = NULL;
+char *ar;
 unsigned int i, j, len;
 len = 0;
 if (str == NULL)
@@ -17,7 +17,9 @@ return (NULL);
 }
 for (j = 0; *(str + j) != '\0'; j++)
 len++;
-ar = malloc (sizeof(char) * (len + 1));
+ar = malloc(sizeof(char) * (len + 1));
+if (ar == NULL)
+return (NULL);
 for (i = 0; i < len; i++)
 *(ar + i) = *(str + i);
 *(ar + len) = '\0';
