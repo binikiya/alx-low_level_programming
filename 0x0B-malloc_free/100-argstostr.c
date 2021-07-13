@@ -16,13 +16,13 @@ return (i);
 }
 
 /**
- * argstostr - concatinates all the arguments in program
+ * *argstostr - concatinates all the arguments in program
  * @ac: no of argument
  * @av: the argument
  * Return: conc. argument
  */
 
-char argstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 char *new;
 int i, j, c, k;
@@ -35,7 +35,7 @@ c += _strlen(av[i]);
 new = malloc(sizeof(char) * (c + ac + 1));
 if (new == NULL)
 {
-free(ptr);
+free(new);
 return (NULL);
 }
 c = 0;
