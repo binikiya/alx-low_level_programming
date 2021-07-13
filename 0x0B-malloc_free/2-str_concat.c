@@ -32,7 +32,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-n1 = _srlen(s1);
+n1 = _strlen(s1);
 n2 = _strlen(s2);
 new = malloc(sizeof(char) * (n1 + n2 + 1));
 if (new == NULL)
