@@ -32,7 +32,7 @@ for (c = 0; c < ac; c++)
 {
 var += _strlen(av[c]);
 }
-new = malloc(sizeof(char) * (var + ac + 1));
+new = (char *)malloc(sizeof(char) * (var + ac + 1));
 if (new == NULL)
 {
 free(new);
