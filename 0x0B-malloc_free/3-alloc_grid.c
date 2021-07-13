@@ -19,7 +19,7 @@ if (ar == NULL)
 return (NULL);
 for (i = 0; i < height; i++)
 {
-(ar + i) = (int *)malloc(sizeof(int) * width);
+*(ar + i) = (int *)malloc(sizeof(int) * width);
 if (ar[i] == NULL)
 {
 while (i >= 0)
