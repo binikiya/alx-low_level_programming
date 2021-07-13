@@ -24,7 +24,7 @@ size += 1;
 size += 1;
 }
 size += 1;
-ptr = malloc(sizeof(char) * count);
+ptr = (char *)malloc(sizeof(char) * count);
 if (ptr == NULL)
 {
 free(ptr);
