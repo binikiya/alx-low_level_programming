@@ -4,6 +4,7 @@
 /**
  * **strtow - splits a string in to words
  * @str: string
+ * Return: new string
  */
 char **strtow(char *str)
 {
@@ -37,7 +38,7 @@ break;
 count++;
 }
 *(p + j) = (char *)malloc(sizeof(char) * (count + 1));
-if ((*p + j) == NULL )
+if ((*p + j) == NULL)
 {
 for (k = 0; k <= j; k++)
 {

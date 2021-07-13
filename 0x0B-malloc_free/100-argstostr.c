@@ -2,20 +2,6 @@
 #include <stdlib.h>
 
 /**
- * _strlen - counts the length of string
- * @str: string
- * Return: i
- */
-
-int _strlen(char *str)
-{
-int i = 0;
-while (str[i] != '\0')
-i++;
-return (i);
-}
-
-/**
  * *argstostr - concatinates all the arguments in program
  * @ac: no of argument
  * @av: the argument
@@ -26,28 +12,29 @@ char *argstostr(int ac, char **av)
 {
 char *new;
 int var, j, c, k;
+var = 0;
 if (ac == 0 || av == NULL)
 return (NULL);
 for (c = 0; c < ac; c++)
 {
-var += _strlen(av[c]);
+for (j = 0; av[c][j] != '\0'; j++)
+k++;
 }
-new = malloc(sizeof(char) * (var + ac + 1));
+new = malloc(char *)(sizeof(char) * (k + ac + 1));
 if (new == NULL)
 {
-free(new);
 return (NULL);
 }
-var = 0;
-for (j = 0; j < ac; j++)
+for (c = 0; c < ac; c++)
 {
-for (k = 0; av[j][k] != '\0'; k++)
+for (j = 0; av[c][j] != '\0'; j++)
 {
-new[var] = av[j][k];
+new[var] = av[c][j];
 var++;
 }
 new[var] = '\n';
 var++;
 }
+new[var] = '\0';
 return (new);
 }
