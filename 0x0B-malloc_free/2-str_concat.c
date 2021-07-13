@@ -2,6 +2,22 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - count length of string
+ * @str: string
+ * Return: length
+ */
+
+int _strlen(char *str)
+{
+int i = 0;
+while (str[i] != '\0')
+{
+i++;
+}
+return (i);
+}
+
+/**
  * *str_concat - concatinates two string
  * @s1: string 1
  * @s2: string 2
@@ -11,32 +27,29 @@
 char *str_concat(char *s1, char *s2)
 {
 char *new = NULL;
-unsigned int i;
-int n1, n2;
-int count = 0;
+int n1, n2, m, i, o;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-n1 = 0;
-n2 = 0;
-while (s1[n1] != '\0')
-n1++;
-while (s2[n2] != '\0')
-n2++;
-new  = (char *)malloc(sizeof(char) * (n1 + n2 + 1));
+n1 = _srlen(s1);
+n2 = _strlen(s2);
+new = malloc(sizeof(char) * (n1 + n2 + 1));
 if (new == NULL)
 return (NULL);
-i = 0;
-while (s1[i] != '\0')
+m = 0;
+while (m < n1)
 {
-new[i] = s1[i];
-i++;
+new[m] = s1[m];
+m++;
 }
-while (s2[count] != '\0')
+i = n1;
+o = 0;
+while (o < n2)
 {
-new[i] = s2[count];
-count++;
+new[i] = s2[o];
+o++;
+i++;
 }
 return (new);
 }
