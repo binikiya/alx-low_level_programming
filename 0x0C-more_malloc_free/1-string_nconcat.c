@@ -34,7 +34,7 @@ else
 for (n2 = 0; n2 < n; n2++)
 par++;
 }
-strnew = (chear *)malloc((n1 + n2 + 1) * sizeof(char));
+strnew = (char *)malloc((n1 + n2 + 1) * sizeof(char));
 if (strnew == NULL)
 return NULL;
 for (i = 0; s1[i] != '\0'; i++)
