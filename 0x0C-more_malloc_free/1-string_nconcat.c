@@ -9,7 +9,7 @@
  * Return: new string
  */
 
-char *string_nconcat(char *s1, char *s2, unsignet int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *strnew = NULL;
 unsigned int i, j, n1, n2, count, par;
