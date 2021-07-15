@@ -17,7 +17,7 @@ mul = 0;
 if (argc != 3)
 {
 printf("Error\n");
-error(98);
+exit(98);
 }
 for (num1 = 1; num1 < argc; num1++)
 {
