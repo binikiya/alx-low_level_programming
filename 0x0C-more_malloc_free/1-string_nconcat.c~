@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * *string_nconcat - prints two concatinated strigs
+ * @s1: string 1
+ * @s2: string 2
+ * @n: number of bytes
+ * Return: new string
+ */
+
+char *string_nconcat(char *s1, char *s2, unsignet int n)
+{
+  
