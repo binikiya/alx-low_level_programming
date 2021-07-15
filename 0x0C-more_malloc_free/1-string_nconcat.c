@@ -17,9 +17,9 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while (n1 != '\0')
+while (s1[n1] != '\0')
 n1++;
-while (n2 != '\0')
+while (s2[n2] != '\0')
 n2++;
 if (n >= n2)
 par = n;

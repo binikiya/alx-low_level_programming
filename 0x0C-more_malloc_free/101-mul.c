@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.c>
+#include <ctype.h>
 
 /**
  * main - multiplies two positive numbers

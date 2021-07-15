@@ -17,7 +17,7 @@ if (size == 0 || nmemb == 0)
 return (NULL);
 t = nmemb * size;
 arr = malloc(t);
-f = (char *)array;
+f = (char *)arr;
 if (f != NULL)
 {
 for (i = 0; i < t; i++)
