@@ -16,7 +16,7 @@ char *strnew = NULL;
 unsigned int i, j, n1, n2;
 n1 = 0;
 n2 = 0;
-int sign = n;
+unsigned int sign = n;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
@@ -31,7 +31,9 @@ sign = n2;
 strnew = malloc(sizeof(char) * (n1 + n2 + 1));
 }
 else
+{
 strnew = malloc(sizeof(char) * (n1 + n + 1));
+}
 if (strnew == NULL)
 return (NULL);
 for (i = 0; i < n1; i++)
