@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
 
 /**
  * *string_nconcat - prints two concatinated strigs
