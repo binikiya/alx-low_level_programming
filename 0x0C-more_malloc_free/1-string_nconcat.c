@@ -17,7 +17,7 @@ unsigned int i, j, n1, n2, count, par;
 n1 = 0;
 n2 = 0;
 count = 0;
-par = 0;
+par = n;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
@@ -29,23 +29,19 @@ n2++;
 if (n >= n2)
 {
 par = n2;
+strnew = malloc(sizeof(char) * (n1 + n2 + 1));
 }
 else
 {
-for (n2 = 0; n2 < n; n2++)
-par++;
-}
-strnew = (char *)malloc((n1 + n2 + 1) * sizeof(char));
+strnew = malloc(sizeof(char) * (n1 + n + 1));
 if (strnew == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
 strnew[i] = s1[i];
-for (j = 0; j < par; i++)
+for (j = 0; j < par; j++)
 {
-strnew[i] = s2[count];
-count++;
-j++;
+strnew[i++] = s2[j];
 }
-strnew[i] = '\0';
+strnew[i++] = '\0';
 return (strnew);
 }
