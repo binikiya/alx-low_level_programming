@@ -12,38 +12,37 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *strnew = NULL;
-unsigned int i, j, n1, n2;
-n1 = 0;
-n2 = 0;
-unsigned int sign = n;
+char *ptr;
+int count, count1;
+char len1, len2;
+int sign = n;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while (s1[n1] != '\0')
-n1++;
-while (s2[n2] != '\0')
-n2++;
-if (sign >= n2)
+for (len1 = 0; s1[len1] != '\0'; len1++)
+;
+for (len2 = 0; s2[len2] != '\0'; len2++)
+;
+if (sign >= len2)
 {
-sign = n2;
-strnew = malloc(sizeof(char) * (n1 + n2 + 1));
+sign = len2;
+ptr = malloc(sizeof(char) * (len1 + len2 + 1));
 }
 else
 {
-strnew = malloc(sizeof(char) * (n1 + n + 1));
+ptr = malloc(sizeof(char) * (len1 + n + 1));
 }
-if (strnew == NULL)
+if (ptr == NULL)
 return (NULL);
-for (i = 0; i < n1; i++)
+for (count = 0; count < len1; count++)
 {
-strnew[i] = s1[i];
+ptr[count] = s1[count];
 }
-for (j = 0; j < sign; j++)
+for (count1 = 0; count1 < sign; count1++)
 {
-strnew[i++] = s2[j];
+ptr[count++] = s2[count1];
 }
-strnew[i++] = '\0';
-return (strnew);
+ptr[count++] = '\0';
+return (ptr);
 }
