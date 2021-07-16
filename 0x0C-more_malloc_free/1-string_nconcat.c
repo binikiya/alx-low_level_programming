@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
  * *string_nconcat - prints two concatinated strigs
@@ -36,7 +37,7 @@ par++;
 }
 strnew = (char *)malloc((n1 + n2 + 1) * sizeof(char));
 if (strnew == NULL)
-return NULL;
+return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
 strnew[i] = s1[i];
 for (j = 0; j < par; i++)
