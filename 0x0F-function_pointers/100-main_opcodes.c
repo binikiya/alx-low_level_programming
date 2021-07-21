@@ -25,7 +25,7 @@ printf("\n");
  * @argv: argumint variable
  * Return: 0
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 int n;
 if (argc != 2)
