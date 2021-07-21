@@ -1,8 +1,8 @@
 #include "3-calc.h"
 
 /**
- * get_op_func - select correct fun to perform
- * @s: char array to check
+ * get_op_func - selects correct function
+ * @s: character array of operation
  * Return: index
  */
 
@@ -16,6 +16,7 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
+
 int i = 0;
 while (ops[i].op != ops[5].op)
 {

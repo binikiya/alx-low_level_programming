@@ -1,0 +1,7 @@
+#include "3-calc.h"
+
+/**
+ * get_op_func - selects correct function
+ * @s: character array of operation
+ * Return: index
+ */
