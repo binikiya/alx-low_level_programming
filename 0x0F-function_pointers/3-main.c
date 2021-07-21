@@ -1,4 +1,8 @@
+#include <stdio.h>
 #include "3-calc.h"
+#include "function_pointers.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * main - performes every function as a start
@@ -9,28 +13,38 @@
 
 int main(int argc, char *argv[])
 {
-int (*newop)(int ,int);
-int (*checker)(int, int);
-int num1, num2;
+int (*get)(int ,int);
+int a, b, operator;
 if (argc != 4)
 {
 printf("Error\n");
 exit(98);
 }
-checker = get_op_func(argv[2]);
-if (checker == NULL)
+if (strlen(argv[2]) != 1)
 {
 printf("Error\n");
-exit(98);
+exit(99);
 }
-if ((argv[2][0] == '/' && atoi(argv[3]) == 0) || argv[2][0] == '%' && atoi(argv[3] == 0))
+operator = argv[2][0];
+switch (operator)
 {
+case '+':
+break;
+case '-':
+break;
+case '*':
+break;
+case '/':
+break;
+case '%':
+break;
+default:
 printf("Error\n");
-exit(100);
+exit(99);
 }
-newop = get_op_func(argv[2]);
-num1 = atoi(argv[1]);
-num2 = atoi(argv[3]);
-printf("%i\n", newop(num1, num2));
+a = atoi(argv[1]);
+b = atoi(argv[3]);
+get = get_op_func(argv[2]);
+printf("%d\n", get(a, b));
 return (0);
 }
