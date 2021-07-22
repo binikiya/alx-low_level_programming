@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-int (*get)(int ,int);
+int (*get)(int, int);
 int a, b, operator;
 if (argc != 4)
 {
