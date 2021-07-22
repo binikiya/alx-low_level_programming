@@ -3,20 +3,19 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - print char
+ * p_char - print char
  * @list: argument
  */
-void print_char (va_list list)
+void p_char (va_list list)
 {
 printf("%c", va_arg(list, int));
 }
 
-
 /**
- * print_string - print string
+ * p_string - print string
  * @list: argument
  */
-void print_string(va_list list)
+void p_string(va_list list)
 {
 char *str;
 str = va_arg(list, char*);
@@ -26,19 +25,19 @@ printf("%s", str);
 }
 
 /**
- * print_integer - print integer
+ * p_integer - print integer
  * @list: agument
  */
-void print_integer(va_list list)
+void p_integer(va_list list)
 {
 printf("%i", va_arg(list, int));
 }
 
 /**
- * print_float - print float
+ * p_float - print float
  * @list: argument
  */
-void print_float(va_list list)
+void p_float(va_list list)
 {
 printf("%f", va_arg(list, double));
 }
@@ -51,14 +50,14 @@ void print_all(const char * const format, ...)
 {
 unsigned int i, j;
 t_print t[] = {
-{"c", print_char},
-{"s", print_string},
-{"i", print_integer},
-{"f", print_float},
+{"c", p_char},
+{"s", p_string},
+{"i", p_integer},
+{"f", p_float},
 {NULL, NULL}
 };
 va_list list;
-char *str = "";
+char *s = "";
 va_start(list, format);
 i = 0;
 while (format && format[i])
@@ -68,9 +67,9 @@ while (t[j].x != NULL)
 {
 if (*(t[j].x) == format[i])
 {
-printf("%s", str);
+printf("%s", s);
 t[j].T_func(list);
-str = ", ";
+s = ", ";
 break;
 }
 j++;
