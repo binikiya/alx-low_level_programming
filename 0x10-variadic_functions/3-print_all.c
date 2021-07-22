@@ -17,10 +17,9 @@ printf("%c", va_arg(list, int));
  */
 void p_string(va_list list)
 {
-char *str;
-str = va_arg(list, char*);
+char *str = va_arg(list, char *);
 if (str == NULL)
-ptr = "(nil)";
+str = "(nil)";
 printf("%s", str);
 }
 
