@@ -11,7 +11,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list list;
-int i;
+unsigned int i;
 char *ptr;
 char arr[] = "(nil)";
 va_start(list, n);
