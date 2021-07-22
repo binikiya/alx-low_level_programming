@@ -18,11 +18,11 @@ printf("%c", va_arg(list, int));
  */
 void print_string(va_list list)
 {
-char *ptr;
-ptr = va_arg(list, char*);
-if (ptr = NULL)
+char *str;
+str = va_arg(list, char*);
+if (str == NULL)
 ptr = "(nil)";
-printf("%s", ptr);
+printf("%s", str);
 }
 
 /**
