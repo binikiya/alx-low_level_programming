@@ -10,13 +10,13 @@ void print_all(const char * const format, ...);
 
 /**
  * struct types_arguments - struct op
- * @t: the operator
- * @f: the function
+ * @x: the operator
+ * @T_func: the function
  */
-typedef struct types_arguments
+typedef struct print
 {
-char x;
+char *x;
 void (*T_func)(va_list);
-} types;
+} t_print;
 
 #endif

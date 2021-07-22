@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
-#include <stdlib.h>
 
 /**
  * print_char - print char
@@ -51,7 +50,7 @@ printf("%f", va_arg(list, double));
 void print_all(const char * const format, ...)
 {
 unsigned int i, j;
-types t[] = {
+t_print t[] = {
 {"c", print_char},
 {"s", print_string},
 {"i", print_integer},
