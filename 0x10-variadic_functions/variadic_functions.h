@@ -9,7 +9,7 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- * struct types_arguments - struct op
+ * struct print - struct op
  * @x: the operator
  * @T_func: the function
  */
