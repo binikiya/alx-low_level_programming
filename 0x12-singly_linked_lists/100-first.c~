@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * calledFirst - element to be printed before main
+ */
+
