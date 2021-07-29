@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * free_list - it is a function that free list_t
+ * @head: the first element
+ * Return: no
+ */
+void free_list(list_t *head)
+{
+  
