@@ -10,7 +10,7 @@
  * Return: address of the new element
  */
 
-listint_t add_nodeint_end(listint_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 struct listint_s *temp = NULL;
 struct listint_s *new = NULL;
@@ -25,7 +25,7 @@ if (*head == NULL)
 }
 else
 {
-temp = head;
+temp = *head;
 while (temp->next != NULL)
 temp = temp->next;
 temp->next = new;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -7,7 +8,7 @@
  * Return: 0
  */
 
-int_listint(listint_t **head)
+int pop_listint(listint_t **head)
 {
 struct listint_s *temp = NULL;
 int i;
@@ -15,7 +16,7 @@ if (*head == NULL)
 return (0);
 temp = *head;
 i = temp->n;
-*head = *temp->next;
+*head = temp->next;
 free(temp);
 return (i);
 }
