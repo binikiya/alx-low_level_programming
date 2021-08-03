@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * listint_len - returns the element in linked listint_t list
+ * @h: first element
+ * Return: num of element
+ */
