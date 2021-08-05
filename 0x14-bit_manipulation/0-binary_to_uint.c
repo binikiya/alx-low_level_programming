@@ -31,7 +31,7 @@ return (sum);
  * Return: length
  */
 
-int _strlen(unsigned char ch)
+int _strlen(const char *ch)
 {
 int i = 0;
 while (ch[i])
