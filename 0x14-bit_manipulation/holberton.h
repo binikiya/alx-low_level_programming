@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef _BIT_MANIP_
+#define _BIT_MANIP_
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
