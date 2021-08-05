@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * flip_bits - the num of bits you want to flip
+ * @n: decimal 1
+ * @m: decimal 2
+ * Return: the num of bit tha i need to change
+ */
+
+unsigned int flip_bits(

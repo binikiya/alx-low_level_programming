@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * print_binary - prints the binary reperesentation of a num
+ * @n: decimal
+ */
+
+void print_binary(unsigned long int n)
+{
+  

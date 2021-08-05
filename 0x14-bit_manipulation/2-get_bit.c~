@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * git_bit - returns the value of a bit at a given index
+ * @n: decimal
+ * @index: index starting from 0
+ * Return: index of bit
+ */
+
