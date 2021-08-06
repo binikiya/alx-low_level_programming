@@ -5,7 +5,7 @@
  * get_endianness - checks the endianness
  * Return: 1 or 0
  */
-int get_endiannes(void)
+int get_endianness(void)
 {
 unsigned int i = 1;
 char *c = (char *)&i;
