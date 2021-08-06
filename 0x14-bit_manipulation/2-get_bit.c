@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * git_bit - returns the value of a bit at a given index
+ * get_bit - returns the value of a bit at a given index
  * @n: decimal
  * @index: index starting from 0
  * Return: index of bit
