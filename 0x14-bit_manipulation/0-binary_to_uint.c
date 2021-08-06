@@ -27,7 +27,7 @@ return (sum);
 
 /**
  * _strlen - returns length of string
- * @s: String to count
+ * @ch: String to count
  * Return: length
  */
 
