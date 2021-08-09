@@ -1,11 +1,10 @@
 #include "holberton.h"
-#include "main.h"
 
 /**
  * main - copy the content of file to another file
  * @argc: argument count
  * @argv: argument variable
- * Return: 0
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv[])
