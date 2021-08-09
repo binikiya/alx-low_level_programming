@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "main.h"
 
 /**
  * read_textfile - reads a textfile and prints to the POSIX standard output
