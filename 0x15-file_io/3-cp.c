@@ -38,11 +38,11 @@ if (size == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-w = write(dest2, buffer, 1024);
+w = write(dest2, buffer, size);
 if (w == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-return (99);
+exit(99);
 }
 }
 if (close(dest1) == -1)
