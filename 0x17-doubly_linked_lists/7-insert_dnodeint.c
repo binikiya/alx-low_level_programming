@@ -16,7 +16,6 @@ dlistint_t *temp2 = NULL;
 dlistint_t *temp3 = NULL;
 dlistint_t *newnode = NULL;
 unsigned int i = 0, j = 0;
-
 if (h == NULL)
 return (NULL);
 newnode = malloc(sizeof(dlistint_t));

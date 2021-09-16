@@ -25,7 +25,7 @@ free(*head);
 return (1);
 }
 temp = *head;
-if (index == 0 && (*head)->next == NULL)
+if (index == 0 && (*head)->next != NULL)
 {
 temp2 = (*head)->next;
 *head = temp2;
