@@ -30,7 +30,7 @@ return (newnode);
 temp3 = *h;
 for (i = 0; temp3->next != NULL; i++)
 temp3 = temp3->next;
-if (i == idx -1)
+if (i == idx - 1)
 {
 newnode = add_dnodeint_end(h, n);
 return (newnode);
