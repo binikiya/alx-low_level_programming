@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "lists.h"
 
 /**
  * dlistint_len - prints the number of elements in a dlistint_t list
