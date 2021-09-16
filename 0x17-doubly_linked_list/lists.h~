@@ -1,0 +1,12 @@
+#ifndef LISTS_H
+#define LISTS_H
+
+/**
+ * struct dlistint_s - doubly linked list
+ * @n: integer
+ * @prev: pointer to the prev node
+ * @next: pointer to the next node
+ *
+ * Description: doubly linked list node structure
+ *
+ */
