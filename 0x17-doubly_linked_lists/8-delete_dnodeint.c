@@ -8,7 +8,7 @@
  * @index: index
  * Return: The pointer to the new node
  */
-int *delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *temp = NULL;
 dlistint_t *temp2 = NULL;
