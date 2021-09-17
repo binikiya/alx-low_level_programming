@@ -10,47 +10,49 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *temp = NULL;
-dlistint_t *temp2 = NULL;
-dlistint_t *temp3 = NULL;
-dlistint_t *temp4 = NULL;
-unsigned int i = 0, j = 0;
+unsigned int i;
+size_t len = 0;
+dlistint_t *current = *head, *tmp = NULL;
 
-if (head == NULL  || *head == NULL)
+if (head == NULL)
 return (-1);
-if (index == 0 && (*head)->next == NULL)
-{
-free(*head);
-*head = NULL;
-return (1);
-}
-temp = *head;
-if (index == 0 && (*head)->next != NULL)
-{
-temp2 = (*head)->next;
-*head = temp2;
-temp2->prev = NULL;
-free(temp);
-return (1);
-}
-temp4 = *head;
-for (i = 0; temp4->next != NULL; i++)
-temp4 = temp4->next;
-if (index > i)
+len = dlistint_len(*head);
+if (index >= len)
 return (-1);
-for (j = 0; j < index - 1; j++)
-temp = temp->next;
-if (index == i)
+if (index == 0 && len > 0)
 {
-temp2 = temp->next;
-temp->next = NULL;
-free(temp2);
+tmp = *head;
+*head = (*head)->next;
+if (len != 1)
+(*head)->prev = NULL;
+free(tmp);
 return (1);
 }
-temp2 = temp->next;
-temp3 = temp->next->next;
-temp->next = temp3;
-temp3->prev = temp;
-free(temp2);
+i = 0;
+while (i < index)
+{
+current = current->next;
+i++;
+}
+current->prev->next = current->next;
+if (index != len - 1)
+current->next->prev = current->prev;
+free(current);
 return (1);
+}
+
+/**
+ * dlistint_len - returns the number of elements in a linked list
+ * @h: pointer to the first node
+ * Return: number of elements
+ */
+size_t dlistint_len(const dlistint_t *h)
+{
+int counter = 0;
+while (h)
+{
+counter++;
+h = h->next;
+}
+return (counter);
 }
