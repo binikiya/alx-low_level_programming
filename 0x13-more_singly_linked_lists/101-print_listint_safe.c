@@ -26,7 +26,7 @@ while (count < i)
 {
 if (temp == temp2)
 {
-printf ("-> [%p] %d\n", (void *)temp, temp->n);
+printf("-> [%p] %d\n", (void *)temp, temp->n);
 return (i);
 }
 temp2 = temp2->next;
