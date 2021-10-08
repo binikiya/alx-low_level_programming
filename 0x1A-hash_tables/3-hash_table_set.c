@@ -1,6 +1,36 @@
 #include "hash_tables.h"
 
 /**
+ * make_hash_node - creates a new hash node
+ * @key: key for the node
+ * @value: value for the node
+ *
+ * Return: the new node, or NULL on fail
+ */
+hash_node_t *make_hash_node(const char *key, const char *value)
+{
+hash_node_t *node;
+node = malloc(sizeof(hash_node_t));
+if (node == NULL)
+return (NULL);
+node->key = strdup(key);
+if (node->key == NULL)
+{
+free(node);
+return (NULL);
+}
+node->value = strdup(value);
+if (node->value == NULL)
+{
+free(node->key);
+free(node);
+return (NULL);
+}
+node->next = NULL;
+return (node);
+}
+
+/**
  * hash_table_set - a function that adds an element to the hashTables
  * @ht: hash tables that you want to update or add the key/value to
  * @key: the key
@@ -37,34 +67,4 @@ return (0);
 hash_node->next = ht->array[index];
 ht->array[index] = hash_node;
 return (1);
-}
-
-/**
- * make_hash_node - creates a new hash node
- * @key: key for the node
- * @value: for the node
- *
- * Return: the new node, NULL or fail
- */
-hash_node_t *make_hash_node(const char *key, const char *value)
-{
-hash_node_t *node;
-node = malloc(sizeof(hash_node_t));
-if (node == NULL)
-return (NULL);
-node->key = strdup(key);
-if (node->key == NULL)
-{
-free(node);
-return (NULL);
-}
-node->value = strdup(value);
-if (node->value == NULL)
-{
-free(node->key);
-free(node);
-return (NULL);
-}
-node->next = NULL;
-return (node);
 }
