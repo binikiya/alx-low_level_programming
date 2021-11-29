@@ -3,8 +3,10 @@ SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
-
-all: m.h $(OBJ)
+RM = rm -f
+%.o: %.c m.h
+	$(CC) $(CFLAGS) -c -o $@ $<
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
