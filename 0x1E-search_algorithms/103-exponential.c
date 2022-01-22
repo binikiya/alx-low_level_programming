@@ -89,7 +89,7 @@ bound *= 2;
 low = bound / 2;
 bound = minimum_value(size - 1, bound);
 printf("Value found between indexes [%lu] and [%lu]\n", low, bound);
-r = binary_search(array + low, bound + 1 - low, value)
+r = binary_search(array + low, bound + 1 - low, value);
 if (r >= 0)
 return (r + low);
 }
