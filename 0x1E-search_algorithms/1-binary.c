@@ -9,15 +9,10 @@
  */
 void print_array(int *array, size_t size)
 {
-size_t i;
-printf("Searching in array:");
-for (i = 0; i < size; i++)
-{
-printf(" %d", array[i]);
-if (i != size - 1)
-printf(",");
-}
-printf("\n");
+size_t i = 0;
+for ( ; i < size - 1; i++)
+printf("%i, ", array[i]);
+printf("%i\n", array[i]);
 }
 
 /**
@@ -30,23 +25,26 @@ printf("\n");
 
 int binary_search(int *array, size_t size, int value)
 {
-size_t l, m, r;
-if (array != NULL && size > 0)
-{
-l = 0;
-r = size - 1;
-print_array(array + l, r + 1 - l);
-while (l < r)
-{
-m = (l + r) / 2;
-if (array[m] < value)
-l = m + 1;
-else if (array[m] > value)
-r = m;
-else
-return (m);
-print_array(array + l, r + 1 - l);
-}
-}
+size_t mid = size / 2;
+int loc;
+if (size == 0 || !array)
 return (-1);
+printf("Searching in array: ");
+print_array(array, size);
+if (size == 1 && array[0] != value)
+return (-1);
+if (size % 2  == 0)
+mid -= 1;
+if (array[mid] > value)
+return (binary_search(array, mid, value));
+else if (array[mid] < value)
+{
+if (size % 2  == 0)
+mid = mid + 1;
+loc = binary_search(array + mid + ((size  % 2 == 0) ? 0 : 1), mid, value);
+if (loc == -1)
+return (-1);
+return (loc + mid);
+}
+return (mid);
 }
