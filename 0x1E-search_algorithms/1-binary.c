@@ -1,4 +1,4 @@
-#include "search_algorithms.h"
+#include "search_algos.h"
 
 /**
  * print_array - prints an array of integers
