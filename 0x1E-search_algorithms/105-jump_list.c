@@ -42,7 +42,7 @@ right = move_forward(left, right->index + jump);
 printf("Value checked at index [%lu] = [%d]\n", right->index, right->n);
 }
 printf("Value found between indexes [%lu] and [%lu]\n",
-       left->index, right->index);
+left->index, right->index);
 printf("Value checked at index [%lu] = [%d]\n", left->index, left->n);
 while (left->index < size - 1 && left->n < value)
 {
