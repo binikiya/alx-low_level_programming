@@ -16,7 +16,7 @@ if (list != NULL)
 {
 express = list->express;
 printf("Value checked at index [%lu] = [%d]\n", express->index,
-       express->n);
+express->n);
 while (express != NULL && express->n < value)
 {
 list = express;
@@ -24,7 +24,7 @@ express = express->express;
 if (express == NULL)
 break;
 printf("Value checked at index [%lu] = [%d]\n", express->index,
-       express->n);
+express->n);
 }
 if (express == NULL)
 {
@@ -33,11 +33,11 @@ while (express->next != NULL)
 express = express->next;
 }
 printf("Value found between indexes [%lu] and [%lu]\n", list->index,
-       express->index);
+express->index);
 while (list != NULL && list->n <= express->n)
 {
 printf("Value checked at index [%lu] = [%d]\n", list->index,
-       list->n);
+list->n);
 if (list->n == value)
 return (list);
 list = list->next;
